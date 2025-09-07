@@ -34,7 +34,7 @@ const MobileNavbarComponent = () => {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px]">
                 <SheetHeader>
-                    <SheetTitle>Title</SheetTitle>
+                    <SheetTitle>Menu</SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col space-y-4 mt-6">
                     <Button variant='ghost' className="flex items-center gap-3 justify-start" asChild>
@@ -46,7 +46,7 @@ const MobileNavbarComponent = () => {
 
                     {isSignedIn ? (
                         <>
-                            <Button variant='ghost' className="flex items-center gap-3 justify-start" asChild>
+                            <Button variant='ghost' className="flex  gap-3 justify-start" asChild>
                                 <Link href='/notifications'>
                                     <BellIcon className="w-4 h-4" />
                                     Notifications
@@ -61,7 +61,7 @@ const MobileNavbarComponent = () => {
                             </Button>
 
                             <SignOutButton>
-                                <Button variant='ghost' className="flex items-center gap-3 justify-start" asChild>
+                                <Button variant='ghost' className="flex items-center gap-3 justify-start">
                                     <LogOutIcon className="w-4 h-4" />
                                     Logout
                                 </Button>

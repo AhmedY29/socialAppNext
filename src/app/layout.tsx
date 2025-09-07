@@ -11,6 +11,8 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/ThemeProvider'
 import NavbarComponent from '@/components/Navbar'
+import SidebarComponent from '@/components/Sidebar'
+import { Toaster } from 'react-hot-toast'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -49,15 +51,16 @@ export default function RootLayout({
                   <div className="max-w-7xl mx-auto px-4">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
                       <div className="hidden lg:block lg:col-span-3">
-                        sideBar
+                        <SidebarComponent />
                       </div>
-                      <div className="lg:col-span-3">
+                      <div className="lg:col-span-9">
                         {children}
                       </div>
                     </div>
                   </div>
                 </main>
             </div>
+            <Toaster />
           </ThemeProvider>
         </body>
       </html>
