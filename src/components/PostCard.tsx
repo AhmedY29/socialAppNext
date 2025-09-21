@@ -115,7 +115,7 @@ const PostCardComponent = ({post, dbUserId}: {post: Post, dbUserId: string | nul
                 </div>
                 {post.image && (
                     <div className="rounded-lg overflow-hidden">
-                        <Image src={post.image} alt='Post_content' className="w-full h-auto object-cover"/>
+                        <img src={post.image} alt='Post_content' className="w-full h-auto object-cover"/>
                     </div>
                 )}
 
